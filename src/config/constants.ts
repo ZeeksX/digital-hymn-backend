@@ -1,0 +1,24 @@
+export const COOKIE_NAMES = {
+  ACCESS_TOKEN: 'access_token',
+  REFRESH_TOKEN: 'refresh_token',
+  XSRF_TOKEN: 'XSRF-TOKEN',
+} as const;
+
+export const TOKEN_EXPIRY = {
+  ACCESS_TOKEN_SECONDS: 15 * 60, // 15 minutes
+  REFRESH_TOKEN_SECONDS: 7 * 24 * 60 * 60, // 7 days
+} as const;
+
+export const MAX_RECENTLY_VIEWED = 30;
+export const MAX_PAGE_LIMIT = 100;
+export const DEFAULT_PAGE_LIMIT = 20;
+
+export const ERROR_CODES = {
+  VALIDATION_ERROR: 'VALIDATION_ERROR',
+  UNAUTHENTICATED: 'UNAUTHENTICATED',
+  FORBIDDEN: 'FORBIDDEN',
+  NOT_FOUND: 'NOT_FOUND',
+  CONFLICT: 'CONFLICT',
+  RATE_LIMITED: 'RATE_LIMITED',
+  INTERNAL_ERROR: 'INTERNAL_ERROR',
+} as const;
